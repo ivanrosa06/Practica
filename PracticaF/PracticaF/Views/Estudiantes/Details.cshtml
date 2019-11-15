@@ -1,0 +1,22 @@
+﻿@model IEnumerable<PracticaF.Models.CursosEstudiantes>
+
+@{
+    ViewBag.Title = "Materias";
+}
+
+<h2>Materias</h2>
+
+<table class="table">
+    
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Curso.nombre)
+        </td>
+        
+        
+    </tr>
+}
+
+</table>
